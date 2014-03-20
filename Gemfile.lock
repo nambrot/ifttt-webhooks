@@ -37,6 +37,9 @@ GEM
       dotenv (>= 0.7)
       thor (>= 0.13.6)
     hike (1.2.3)
+    httparty (0.13.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.9)
     json (1.8.1)
     kgio (2.8.0)
@@ -47,6 +50,7 @@ GEM
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.9.2)
+    multi_xml (0.5.5)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     pg (0.17.1)
@@ -95,7 +99,9 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    xmlrpc_controller (0.0.1)
+    xmlrpc_controller (0.0.3)
+      httparty
+      nokogiri
 
 PLATFORMS
   ruby
@@ -103,9 +109,8 @@ PLATFORMS
 DEPENDENCIES
   clockwork
   foreman
-  nokogiri
   pg
   rails (= 4.0.4)
   sdoc
   unicorn
-  xmlrpc_controller
+  xmlrpc_controller (>= 0.0.3)

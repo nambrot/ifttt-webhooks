@@ -26,9 +26,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'xmlrpc_controller'
+gem 'xmlrpc_controller', '>= 0.0.3'
 gem 'foreman'
 gem 'clockwork'
 gem 'unicorn'
 gem 'pg'
-gem 'nokogiri'
