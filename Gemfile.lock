@@ -99,7 +99,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    xmlrpc_controller (0.0.3)
+    xmlrpc_controller (0.0.6)
       httparty
       nokogiri
 
@@ -113,4 +113,4 @@ DEPENDENCIES
   rails (= 4.0.4)
   sdoc
   unicorn
-  xmlrpc_controller (>= 0.0.3)
+  xmlrpc_controller (>= 0.0.6)
